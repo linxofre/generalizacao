@@ -1,16 +1,15 @@
-package exercicio9_conta_simples;
+package exercicio9_pessoa;
 
 public class Main {
 
 	public static void main(String[] args) {
-		ContaSimples i = new ContaSimples (13.25);
-		System.out.println(i);
+		Pessoa p = new Pessoa("josé");
+		System.out.println(p);
 		
-		ContaEspecial l = new ContaEspecial(10, 88.7);
-		l.setBanco("Itau");
-		l.setAgencia(103);
-		System.out.println(l);
-		
+		PessoaFisico pf = new PessoaFisico("Ricardo");
+		pf.setCpf("012.345.678-9");
+		System.out.println(pf);
+
 	}
 
 }
